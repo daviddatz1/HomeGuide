@@ -16,7 +16,7 @@ export function FinalCTA() {
           href="#waitlist"
           className="mt-10 inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-neutral-900 shadow-xl transition hover:bg-neutral-100"
         >
-          Join the early access list
+          Join the Early Access List
           <ArrowRight className="h-4 w-4" aria-hidden />
         </a>
       </div>
