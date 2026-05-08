@@ -556,6 +556,16 @@ h1 {
   font-weight: 900;
 }
 
+.feature-icon svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
 .problem-card h3,
 .feature-card h3,
 .step-card h3 {
@@ -697,7 +707,7 @@ h1 {
 }
 
 .before li::before {
-  content: "×";
+  content: "x";
   color: #fca5a5;
 }
 
@@ -711,7 +721,7 @@ h1 {
 }
 
 .after li::before {
-  content: "✓";
+  content: "+";
   color: var(--accent);
 }
 
