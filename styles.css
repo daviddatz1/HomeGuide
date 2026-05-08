@@ -1,19 +1,19 @@
 :root {
   --bg: #f7f8f6;
   --bg-soft: #f1f5f2;
-  --surface: rgba(255, 255, 255, 0.78);
+  --surface: rgba(255, 255, 255, 0.9);
   --surface-strong: #ffffff;
   --border: rgba(16, 24, 40, 0.08);
   --text: #121826;
-  --text-soft: #556070;
-  --text-muted: #6f7a89;
+  --text-soft: #435164;
+  --text-muted: #5c6878;
   --accent: #2176ff;
   --accent-soft: rgba(33, 118, 255, 0.12);
   --accent-strong: #185fce;
   --success: #1d8f67;
-  --shadow-lg: 0 28px 90px rgba(18, 24, 38, 0.08);
-  --shadow-md: 0 16px 40px rgba(18, 24, 38, 0.08);
-  --shadow-sm: 0 10px 24px rgba(18, 24, 38, 0.06);
+  --shadow-lg: 0 28px 90px rgba(18, 24, 38, 0.12);
+  --shadow-md: 0 16px 40px rgba(18, 24, 38, 0.1);
+  --shadow-sm: 0 10px 24px rgba(18, 24, 38, 0.08);
   --radius-xl: 32px;
   --radius-lg: 24px;
   --radius-md: 18px;
@@ -71,7 +71,7 @@ input {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(16px);
-  background: rgba(247, 248, 246, 0.82);
+  background: rgba(247, 248, 246, 0.9);
   border-bottom: 1px solid rgba(16, 24, 40, 0.04);
 }
 
@@ -173,6 +173,12 @@ input {
   padding: 5.5rem 0;
 }
 
+.problem-section,
+.proof-section,
+.faq-section {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.08));
+}
+
 .hero-section {
   padding-top: 4.5rem;
 }
@@ -259,8 +265,8 @@ input {
 
 .hero-card {
   position: absolute;
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-lg);
   backdrop-filter: blur(24px);
@@ -343,7 +349,7 @@ input {
   margin-top: 1.25rem;
   padding: 1.2rem;
   border-radius: 22px;
-  background: rgba(243, 247, 251, 0.9);
+  background: rgba(243, 247, 251, 0.96);
   border: 1px solid rgba(16, 24, 40, 0.05);
 }
 
@@ -452,7 +458,7 @@ input {
 .faq-item,
 .cta-card {
   background: var(--surface);
-  border: 1px solid rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(16, 24, 40, 0.06);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   backdrop-filter: blur(16px);
@@ -461,7 +467,7 @@ input {
 .problem-card,
 .step-card,
 .feature-card {
-  padding: 1.5rem;
+  padding: 1.65rem;
 }
 
 .problem-card p,
@@ -469,6 +475,7 @@ input {
 .feature-card p {
   color: var(--text-soft);
   margin-bottom: 0;
+  font-size: 0.98rem;
 }
 
 .problem-icon,
