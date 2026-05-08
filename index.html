@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="HomeGuide helps homeowners diagnose household issues, follow safe step-by-step DIY guidance, and get optional live expert help."
+    >
+    <title>HomeGuide | Fix home problems in minutes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" aria-label="HomeGuide navigation">
+        <a class="brand" href="#top" aria-label="HomeGuide home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M4 10.4 12 4l8 6.4V20a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1v-9.6Z" />
+              <path d="M9 11.25h6" />
+            </svg>
+          </span>
+          HomeGuide
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#how-it-works">How it works</a>
+          <a href="#features">Features</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a class="header-cta" href="#waitlist">Join waitlist</a>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">
+              AI home repair guidance, with experts when you need them
+            </p>
+            <h1>Fix home problems instantly without waiting for a contractor.</h1>
+            <p class="hero-subtitle">
+              Upload a photo of any home issue and get step-by-step help or live expert guidance instantly.
+            </p>
+            <div class="hero-actions" id="waitlist">
+              <form class="waitlist-form" data-waitlist-form>
+                <label class="sr-only" for="email">Email address</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="Enter your email"
+                  required
+                >
+                <button type="submit">Join the Waitlist</button>
+              </form>
+              <a class="secondary-button" href="#how-it-works">See How It Works</a>
+            </div>
+            <p class="form-note" data-form-message>
+              No spam. Just early access when HomeGuide launches.
+            </p>
+            <div class="trust-row" aria-label="Product benefits">
+              <span>Instant diagnosis</span>
+              <span>Safety first</span>
+              <span>Live help optional</span>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="HomeGuide app preview">
+            <div class="phone-mockup">
+              <div class="phone-status">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="app-card diagnosis-card">
+                <div>
+                  <p class="app-label">Uploaded issue</p>
+                  <h2>Kitchen sink leak</h2>
+                </div>
+                <div class="photo-preview" aria-hidden="true">
+                  <svg viewBox="0 0 120 88">
+                    <rect x="13" y="16" width="94" height="56" rx="12" />
+                    <path d="M33 53c7-9 15-11 23-4 8 7 14 6 22-5 5-7 11-9 17-5" />
+                    <circle cx="42" cy="33" r="6" />
+                  </svg>
+                </div>
+              </div>
+              <div class="app-card ai-result">
+                <div class="result-header">
+                  <span class="pulse-dot"></span>
+                  <p>AI diagnosis ready</p>
+                </div>
+                <h3>Likely loose P-trap fitting</h3>
+                <p>
+                  Safe for most homeowners. Turn off water nearby, place a towel, then hand-tighten the collar.
+                </p>
+              </div>
+              <div class="metric-grid">
+                <div class="metric-card safe">
+                  <span>Difficulty</span>
+                  <strong>Medium</strong>
+                </div>
+                <div class="metric-card">
+                  <span>DIY cost</span>
+                  <strong>$8-$18</strong>
+                </div>
+              </div>
+              <button class="expert-call" type="button">
+                <span class="avatar-stack" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                </span>
+                Call a live expert
+              </button>
+            </div>
+            <div class="floating-card floating-card-top">
+              <span class="mini-icon">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M12 3 4 6.5v5.7c0 4.3 2.9 7.5 8 8.8 5.1-1.3 8-4.5 8-8.8V6.5L12 3Z" />
+                  <path d="m8.5 12 2.2 2.2 4.8-5" />
+                </svg>
+              </span>
+              Safety checked
+            </div>
+            <div class="floating-card floating-card-bottom">
+              <strong>$182</strong>
+              <span>estimated savings</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="problem section reveal" aria-labelledby="problem-title">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Why homeowners need HomeGuide</p>
+            <h2 id="problem-title">Small home issues should not become expensive mysteries.</h2>
+            <p>
+              When something breaks, the hardest part is knowing what is wrong, whether it is safe to touch, and who to trust.
+            </p>
+          </div>
+          <div class="frustration-grid">
+            <article>
+              <span class="frustration-number">01</span>
+              <h3>Not sure what is actually broken?</h3>
+              <p>Turn uncertainty into a clear diagnosis before you start taking anything apart.</p>
+            </article>
+            <article>
+              <span class="frustration-number">02</span>
+              <h3>Tired of paying $200+ for small fixes?</h3>
+              <p>See when a low-cost DIY repair is realistic before booking a visit.</p>
+            </article>
+            <article>
+              <span class="frustration-number">03</span>
+              <h3>Waiting days for a handyman?</h3>
+              <p>Get guidance in minutes for common issues that do not need a full service call.</p>
+            </article>
+            <article>
+              <span class="frustration-number">04</span>
+              <h3>Afraid of making it worse?</h3>
+              <p>Know the safety level, needed tools, and exact next step before you act.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="how section reveal" id="how-it-works" aria-labelledby="how-title">
+          <div class="section-heading">
+            <p class="eyebrow">How it works</p>
+            <h2 id="how-title">From problem to plan in three simple steps.</h2>
+          </div>
+          <div class="steps">
+            <article class="step-card">
+              <span class="step-number">1</span>
+              <div class="step-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M5 8.5A2.5 2.5 0 0 1 7.5 6h1.7l1.3-2h3l1.3 2h1.7A2.5 2.5 0 0 1 19 8.5v8A2.5 2.5 0 0 1 16.5 19h-9A2.5 2.5 0 0 1 5 16.5v-8Z" />
+                  <circle cx="12" cy="12.5" r="3.2" />
+                </svg>
+              </div>
+              <h3>Upload a photo or video</h3>
+              <p>Show HomeGuide the leak, crack, noise, stain, or broken part you are dealing with.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">2</span>
+              <div class="step-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M12 4v16" />
+                  <path d="M7 7.5h10" />
+                  <path d="M7 12h10" />
+                  <path d="M7 16.5h6" />
+                </svg>
+              </div>
+              <h3>Get diagnosis and instructions</h3>
+              <p>Receive likely causes, tools needed, safety warnings, and clear repair steps.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">3</span>
+              <div class="step-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M7 9a5 5 0 0 1 10 0v2a5 5 0 0 1-10 0V9Z" />
+                  <path d="M4.5 20c1.2-3 3.7-4.5 7.5-4.5s6.3 1.5 7.5 4.5" />
+                </svg>
+              </div>
+              <h3>Fix it or call an expert</h3>
+              <p>Handle it yourself with confidence, or start a live video call for real-time help.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="features section reveal" id="features" aria-labelledby="features-title">
+          <div class="section-heading">
+            <p class="eyebrow">MVP features</p>
+            <h2 id="features-title">Everything you need to decide the right next step.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M5 8.5A2.5 2.5 0 0 1 7.5 6h1.7l1.3-2h3l1.3 2h1.7A2.5 2.5 0 0 1 19 8.5v8A2.5 2.5 0 0 1 16.5 19h-9A2.5 2.5 0 0 1 5 16.5v-8Z" />
+                  <circle cx="12" cy="12.5" r="3.2" />
+                </svg>
+              </div>
+              <h3>Snap a Problem</h3>
+              <p>Upload a photo or video and get an instant AI diagnosis of the household issue.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M6 5h12v14H6z" />
+                  <path d="M9 9h6" />
+                  <path d="M9 13h6" />
+                  <path d="M9 17h3" />
+                </svg>
+              </div>
+              <h3>Step-by-Step Fix Guidance</h3>
+              <p>Follow simple instructions with the tools, parts, and safety notes you need upfront.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M7 8.5A3.5 3.5 0 0 1 10.5 5h3A3.5 3.5 0 0 1 17 8.5v2A3.5 3.5 0 0 1 13.5 14h-3A3.5 3.5 0 0 1 7 10.5v-2Z" />
+                  <path d="M4.5 19c1.4-2.7 3.9-4 7.5-4s6.1 1.3 7.5 4" />
+                </svg>
+              </div>
+              <h3>Live Expert Help</h3>
+              <p>Escalate to an optional video call with a handyman for real-time guidance.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M6 17 18 5" />
+                  <path d="M8 6h4v4" />
+                  <path d="M12 14h4v4" />
+                  <path d="M6.5 17.5 10 21l7.5-7.5" />
+                </svg>
+              </div>
+              <h3>Fix vs Hire Comparison</h3>
+              <p>Compare estimated DIY cost against hiring a professional before you decide.</p>
+            </article>
+            <article class="feature-card wide-feature">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M12 3 4 6.5v5.7c0 4.3 2.9 7.5 8 8.8 5.1-1.3 8-4.5 8-8.8V6.5L12 3Z" />
+                  <path d="m8.5 12 2.2 2.2 4.8-5" />
+                </svg>
+              </div>
+              <h3>Safety and Difficulty Indicator</h3>
+              <p>Know whether the issue is safe to attempt, medium difficulty, or best handled by a pro.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="value section reveal" aria-labelledby="value-title">
+          <div class="section-heading narrow">
+            <p class="eyebrow">The transformation</p>
+            <h2 id="value-title">Go from stressed and guessing to calm and confident.</h2>
+          </div>
+          <div class="comparison">
+            <article class="comparison-card before">
+              <p class="comparison-label">Before HomeGuide</p>
+              <ul>
+                <li>Confusion about what is wrong</li>
+                <li>Stress about causing more damage</li>
+                <li>Expensive visits for simple fixes</li>
+              </ul>
+            </article>
+            <article class="comparison-card after">
+              <p class="comparison-label">After HomeGuide</p>
+              <ul>
+                <li>Clear diagnosis and next steps</li>
+                <li>Confidence to fix safe issues</li>
+                <li>Fast decisions with lower cost</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="faq section reveal" id="faq" aria-labelledby="faq-title">
+          <div class="section-heading">
+            <p class="eyebrow">Questions homeowners ask</p>
+            <h2 id="faq-title">Designed to help, not replace judgment.</h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>Is HomeGuide replacing contractors?</summary>
+              <p>
+                No. HomeGuide helps with diagnosis, simple fixes, and deciding when a professional is the safer choice.
+              </p>
+            </details>
+            <details>
+              <summary>What types of repairs does this help with?</summary>
+              <p>
+                HomeGuide is built for small household issues like leaks, clogged drains, appliance hiccups, drywall damage, squeaks, stains, and basic troubleshooting.
+              </p>
+            </details>
+            <details>
+              <summary>Is this safe?</summary>
+              <p>
+                Safety is central to the guidance. HomeGuide flags difficulty and recommends professional help when a repair may involve high risk.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section class="final-cta section reveal" aria-labelledby="cta-title">
+          <div class="cta-panel">
+            <p class="eyebrow">Early access</p>
+            <h2 id="cta-title">Stop overpaying for simple home repairs.</h2>
+            <p>Be among the first to try HomeGuide when it launches.</p>
+            <form class="waitlist-form cta-form" data-waitlist-form>
+              <label class="sr-only" for="footer-email">Email address</label>
+              <input
+                id="footer-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="Enter your email"
+                required
+              >
+              <button type="submit">Join the Early Access List</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>HomeGuide</p>
+        <p>AI guidance for everyday home repairs.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
