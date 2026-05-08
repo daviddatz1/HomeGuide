@@ -1,6 +1,5 @@
 const revealElements = document.querySelectorAll(".reveal");
 const waitlistForms = document.querySelectorAll("[data-waitlist-form]");
-const heroFormMessage = document.querySelector("[data-form-message]");
 
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
@@ -32,14 +31,22 @@ waitlistForms.forEach((form) => {
     }
 
     const email = emailInput.value.trim();
+    const scopedMessage = form
+      .closest(".hero-copy, .cta-panel")
+      ?.querySelector("[data-form-message]");
     const successMessage = "You're on the list. We'll send early access details soon.";
 
-    window.localStorage.setItem("homeguideWaitlistEmail", email);
+    try {
+      window.localStorage.setItem("homeguideWaitlistEmail", email);
+    } catch {
+      // Some private browsing modes block storage; signup feedback should still work.
+    }
+
     form.reset();
 
-    if (heroFormMessage) {
-      heroFormMessage.textContent = successMessage;
-      heroFormMessage.classList.add("success");
+    if (scopedMessage) {
+      scopedMessage.textContent = successMessage;
+      scopedMessage.classList.add("success");
     }
 
     form.setAttribute("aria-label", successMessage);
